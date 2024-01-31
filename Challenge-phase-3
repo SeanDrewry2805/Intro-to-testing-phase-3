@@ -1,0 +1,48 @@
+Could you list the same space with a different name - trying to overlap spaces
+Person who listed the space didn’t enter the correct date info - listing space would be impossible if info is wrong
+Property damage/Issues with location.
+User books two spaces for one night (limitation to amount of spaces?)
+Personal data theft (are the details stored securely? Such as bank info or passwords)
+
+Assumptions/questions
+
+User can create an account: account page
+Only one night for a request?
+Spaces will be looked after by buyers
+Stripe is a secure way of paying for spaces
+Buttons are all linked correctly
+Pages all render within an acceptable time
+Basic error messages are hard coded e.g. (Password doesn’t match, please try again)
+
+Possible testing scenarios:
+
+Sign up/login:
+- Testing input fields for extreme cases or unusual inputs
+- Testing against previously stored info (trying to create an account that already exists)
+- Malicious inputs (SQL breaches)
+
+Listing a space:
+- Testing input fields for extreme cases or unusual inputs
+- Testing date field(s)
+- Testing repeated listings 
+
+Hire a space:
+- Testing Search fields for extreme cases or unusual inputs
+- Hiring a space that has already been booked (see if error message or user message appears)
+- Testing if dates match up to applicable spaces
+- Testing that unconfirmed spaces do not stop other users from booking
+
+Approving/viewing requests:
+- Checking if booked spaces match up to requests page 
+- Checking if info on requests made/received match with booking info
+- Testing that a request can be approved/denied
+- Approval is received by the person booking 
+- Checking that the date for that space has been greyed out/removed from selection
+
+Important testing scenarios/ initial priorities:
+
+- Sign up and log in
+- Security and reliability
+- Booking a space
+- Approving or viewing requests
+- Checking website for updates after the previous actions (greyed out dates that have been booked) (User experience more related to logged in user)
